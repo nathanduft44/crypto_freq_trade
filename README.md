@@ -7,8 +7,39 @@ The goal of this project is to create a algorithmic trading strategy based aroun
 ## Data
 Pull minute data from a 30 min lookback period and run TA on that.
 Still unknown for the Machine learning models.
-## Backtest the algorithm and optimize RNN.
+## Machine Learning Models
+<details>
+<summary>Recurrent Neural Network</summary>
+ 
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/84649228/137434885-43fd209d-0b3d-46ed-974a-56d48bb73d6a.png"> 
+</p>    
+  
+A recurrent neural network (RNN) is a type of artificial neural network that uses sequential data and time series data. RNN models are known for their ability to take the information from prior inputs and use them to influence the current input and output. The data they use creates a dependency on each input and output giving them the ability to understand the data.
+ 
+For this project we utilized the recurrent neural network model to see if we could predict the future price of Bitcoin. First, we gathered the API market data from Binance, pulling data from January 1, 2021, up to the current previous day. Like all other machine learning models, we split our data into 80% training and 20% testing data. The graph below breaks down the market data into training and test data. 
+  
+<p align="center" width="100%">
+    <img width="100%" src="https://user-images.githubusercontent.com/84649228/137440957-ab79f3db-3fcc-4c14-9af8-6aa2d45947f1.png"> 
+</p>
 
+After we train, test, and split, we are able to build a model using the idea of long short-term memory(LSTM). LSTM is used as a solution to the vanishing gradient problem that is typical of RNN models. Vanishing gradient occurs when multiplying many small numbers together begins to create even more small numbers to the point of minuscule immaterial data. The more the data trains, the more long term dependencies will influence the data, thus overfitting occurs. LSTM solution to fighting this issue is by having hidden layers of the neural network.
+  
+There were many trials of testing this model and each model scored very well for mean average error score (all <10%). Based on the training for this data, we were able to get the lowest mean average error score of 2.89%
+
+  <p align="center" width="100%">
+    <img width="80%" src="https://user-images.githubusercontent.com/84649228/137442785-c284ca16-a752-4243-bdc9-a76ba55224c1.png"> 
+</p>
+ 
+  <p align="center" width="100%">
+    <img width="100%" src="https://user-images.githubusercontent.com/84649228/137442739-ed91d252-a128-4dea-90c6-f3de4a49ae1c.png"> 
+</p>
+
+We tested more and we believe that the best and most accurate predictive model used was : ___
+  
+
+
+</details>
 
 
 ## DAY 1 implement machine learning LSTM to predict future prices of crypto currencies
