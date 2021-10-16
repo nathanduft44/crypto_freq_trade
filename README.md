@@ -44,4 +44,8 @@ We tested more and we believe that the best and most accurate predictive model u
 
 
 </details>
-
+<details>
+<summary>Logistic Regression</summary>
+Logistic Regression Model 
+Logistic Regression is a parametric classification type of model that is used for predicting binary outcomes with a categorical target.
+In our instance we applied technical analysis and created a trading signal as the outcome to predict profitable trades. We used a Short Moving Average strategy, improved the strategy by adjusting the Technical moving average rolling average to the optimal lengths. 
