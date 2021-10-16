@@ -1,6 +1,6 @@
-# Crypto_Freq_Trade
+<h1 align="center">Crypto_Freq_Trade</h1>
 
-## Overviw
+## Overview
 Crypto trading is transforming as Algorithmic Trading is being adopted more by start ups and efficient programmers with specific knowledge in Technical Analyis, Machine Learning, and Smart Contracts. We thought it would be fun to test our knowledge and find profitable trading strategies. The idea around Algorithimc Trading in the Crypto Market is that a user can have automated trades based on conditional logic and can be traded at any time. 
 
 ## Data Extraction/Processing
@@ -28,21 +28,19 @@ For this project we utilized the recurrent neural network model to see if we cou
 
 After we train, test, and split, we are able to build a model using the idea of long short-term memory(LSTM). LSTM is used as a solution to the vanishing gradient problem that is typical of RNN models. Vanishing gradient occurs when multiplying many small numbers together begins to create even more small numbers to the point of minuscule immaterial data. The more the data trains, the more long term dependencies will influence the data, thus overfitting occurs. LSTM solution to fighting this issue is by having hidden layers of the neural network.
   
-There were many trials of testing this model and each model scored very well for mean average error score (all <10%). Based on the training for this data, we were able to get the lowest mean average error score of 2.89%
+There were many trials of testing this model, and each model scored very well with mean average error score all under 10%. Based on the training for this data, we were able to get the lowest mean average error score of 2.89% and our model closely predicts the actual.
 
   <p align="center" width="100%">
-    <img width="80%" src="https://user-images.githubusercontent.com/84649228/137442785-c284ca16-a752-4243-bdc9-a76ba55224c1.png"> 
+    <img width="50%" src="https://user-images.githubusercontent.com/84649228/137442785-c284ca16-a752-4243-bdc9-a76ba55224c1.png"> 
 </p>
  
   <p align="center" width="100%">
     <img width="100%" src="https://user-images.githubusercontent.com/84649228/137442739-ed91d252-a128-4dea-90c6-f3de4a49ae1c.png"> 
 </p>
 
-We tested more and we believe that the best and most accurate predictive model used was : ___
-  
-
-
+ 
 </details>
+
 <details>
 <summary>Logistic Regression and Support Vector Machine</summary>
 Logistic Regression Model 
