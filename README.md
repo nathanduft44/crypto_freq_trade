@@ -1,13 +1,12 @@
 # Crypto_Freq_Trade
 ## Overviw
 Crypto trading is transforming as Algorithmic Trading is being adopted more by start ups and efficient programmers with specific knowledge in Technical Analyis, Machine Learning, and Smart Contracts. We thought it would be fun to test our knowledge and find profitable trading strategies. The idea around Algorithimc Trading in the Crypto Market is that a user can have automated trades based on conditional logic and can be traded at any time. 
-
-## Data
-Market data was sourced from Binance.US and sentiment data from LunarCrush API's. Historical data from 2018-2021 was used to train the machine learning models. In addition to pulling data at a set interval ( a 1 minute pull on a 30 min loopback )using REST API's we experimented with using a websocket for continuous live connection to data which we hope to incoporate into our next steps.
-
-## Models
-The idea behind RNNs is to make use of sequential information. In a traditional neural network we assume that all inputs (and outputs) are independent of each other. But for many tasks that’s a very bad idea. If you want to predict the next word in a sentence you better know which words came before it. RNNs are called recurrent because they perform the same task for every element of a sequence, with the output being depended on the previous computations. Another way to think about RNNs is that they have a “memory” which captures information about what has been calculated so far. In theory RNNs can make use of information in arbitrarily long sequences, but in practice they are limited to looking back only a few steps.
-
+## Data Extraction/Processing
+Market data was sourced from Binance.US and sentiment data from LunarCrush API's. Historical data from 2018-2021 was used to train the machine learning models. In addition to pulling data at a set interval ( a 1 minute pull on a 30 min loopback for Lunar Crush Sentiment )using REST API's we experimented with using a websocket for continuous live connection to data which we hope to incoporate into our next steps.
+Binance.US
+We were able to pull 10 orders per second using the Binance API. The process was making a request using the client.get_historical_klines function with parameters that stated which Currency, time interval, and starting period. We left out the end date because our models needed the latest current data to make profitable decisions.  
+## Crypto Arbitrage with Solidity in Testing 
+We decided to also look for arbitrage opportunites in the Defi Space within crypto Decentralized Exchanges through the power of Smart Contracts and open source protocols. To gain maximum arbitrage performance and knowledge we built a smart contract that swaps tokens between exchanges in a single transaction. For the testing phase we are using the Ropsten network and deploying the Smart Contract on Ropsten Test Network. The Smart Contract can be deployed via Remix.
 ## Machine Learning Models
 <details>
 <summary>Recurrent Neural Network</summary>
