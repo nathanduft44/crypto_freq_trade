@@ -45,7 +45,25 @@ We tested more and we believe that the best and most accurate predictive model u
 
 </details>
 <details>
-<summary>Logistic Regression</summary>
+<summary>Logistic Regression and Support Vector Machine</summary>
 Logistic Regression Model 
 Logistic Regression is a parametric classification type of model that is used for predicting binary outcomes with a categorical target.
 In our instance we applied technical analysis and created a trading signal as the outcome to predict profitable trades. We used a Short Moving Average strategy, improved the strategy by adjusting the Technical moving average rolling average to the optimal lengths. 
+Our Model was able to out perform the actual returns. This was a milestone!!
+Logistic Regression Results:
+Classification Report
+ ![Screen Shot 2021-10-15 at 9 01 45 PM](https://user-images.githubusercontent.com/86027898/137573107-5f85a2c0-56cd-43a3-90f5-f1700e3b5d7c.png)
+Model prediction vs Actual Returns
+ ![Screen Shot 2021-10-15 at 9 02 56 PM](https://user-images.githubusercontent.com/86027898/137573146-c5d7d620-71dc-496a-a2bc-a85f1fdaf623.png)
+  Suppor Vector Machine
+This is another supervised machine learning model that can produce significant accuracy.
+Results:
+Classification Report
+ ![Screen Shot 2021-10-15 at 9 00 22 PM](https://user-images.githubusercontent.com/86027898/137573079-74bd2314-cb1a-42d4-b403-d4b258092b1a.png)
+
+Model prediction vs Actual Returns
+ ![Screen Shot 2021-10-15 at 8 57 14 PM](https://user-images.githubusercontent.com/86027898/137572970-a0a0c904-2dbf-4fae-acab-57847b51eba1.png)
+
+ 
+ 
+
