@@ -5,8 +5,7 @@ The idea behind RNNs is to make use of sequential information. In a traditional 
 ## 
 The goal of this project is to create a algorithmic trading strategy based around conditional logic that weighs buy and sell points for a few crypto currencies(TBD). The focus is predicting short trends(High frequency time period) using Recurrent Neural Netoworks and TA. 
 ## Data
-Pull minute data from a 30 min lookback period and run TA on that.
-Still unknown for the Machine learning models.
+Market data was sourced from Binance.us and sentiment data from LunarCrush API's. Historical data from 2018-2021 was used to train the machine learning models. In addition to pulling data at a set interval ( a 1 minute pull on a 30 min loopback )using REST API's we experimented with using a websocket for continuous live connection to data which we hope to incoporate into our next steps. 
 ## Machine Learning Models
 <details>
 <summary>Recurrent Neural Network</summary>
