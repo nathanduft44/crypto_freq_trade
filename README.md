@@ -78,4 +78,13 @@ Model prediction vs Actual Returns
  
  [Nansamba Ssensalo](https://www.linkedin.com/in/a-nansamba-ssensalo/)
  
+ ## Packages and Libraries
+ Python
+ Pandas
+ Sklearn
+ Keras
+ Solidity
+ sqlalchemy
+ python-binance
+ matplotlib
 
