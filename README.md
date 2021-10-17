@@ -78,13 +78,16 @@ Model prediction vs Actual Returns
  
  [Nansamba Ssensalo](https://www.linkedin.com/in/a-nansamba-ssensalo/)
  
- ## Packages and Libraries
- Python
- Pandas
- Sklearn
- Keras
- Solidity
- sqlalchemy
- python-binance
- matplotlib
-
+ ## Installation and Libraries
+ Python   
+ Pandas    
+ Sklearn  
+ Keras  
+ Solidity  
+ sqlalchemy  
+ python-binance  
+ matplotlib  
+ import mplfinance as mpl  
+ * To run arbitrage download remote open source protocols seen in the Crypto Arbitrage Folder and solidity compiler
+ * To run the machine learning models import Sklearn and Keras, view models page for details
+ * To pull data from binance api and make requests do pip install python-binance and 
