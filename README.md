@@ -90,4 +90,4 @@ Model prediction vs Actual Returns
  import mplfinance as mpl  
  * To run arbitrage download remote open source protocols seen in the Crypto Arbitrage Folder and solidity compiler
  * To run the machine learning models import Sklearn and Keras, view models page for details
- * To pull data from binance api and make requests do pip install python-binance and 
+ * To pull data from binance api and make requests do pip install python-binance
